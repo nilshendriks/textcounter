@@ -19,7 +19,7 @@ Character count (incl spaces)
 Character count no spaces
 <?php echo charcountnospaces($page->text()) ?>
 
-Put either or all of these in your template and it will echo the corresponding number. You can pass any other page variable to estimate the reading time of it.
+Put either or all of these in your template and it will echo the corresponding number. You can pass any other page variable to count  ie text(), title() etc.
 
 ## Example usage
 
