@@ -1,0 +1,7 @@
+# Text Counter plugin
+
+This is a plugin for [Kirby](http://getkirby.com/) that counts words or characters of any content.
+
+Please see textcounter.mdown for details.
+
+This file is only here because GitHub made me do it :-P
