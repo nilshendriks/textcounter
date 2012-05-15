@@ -18,7 +18,6 @@
  * <?php echo charcountnospaces($page->text()) ?>
  *
  * Author: Nirusu <http://nirusu.me>
- * Contributor: Bastian Allgeier <http://getkirby.com>
  *
  */
 

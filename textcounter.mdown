@@ -1,0 +1,51 @@
+# Text Counter plugin
+
+This is a plugin for [Kirby](http://getkirby.com/) that counts words or characters of any content.
+
+## Installation
+
+Put the `textcounter.php` file in your `site/plugins` folder.
+
+## How to use it
+
+Depending on what you want to display use:
+
+Word count
+<?php echo wordcount($page->text()) ?>
+
+Character count (incl spaces)
+<?php echo charcount($page->text()) ?>
+
+Character count no spaces
+<?php echo charcountnospaces($page->text()) ?>
+
+Put either or all of these in your template and it will echo the corresponding number. You can pass any other page variable to estimate the reading time of it.
+
+## Example usage
+
+<?php snippet('header') ?>
+<?php snippet('menu') ?>
+<?php snippet('submenu') ?>
+
+    <section class="content">
+
+        <article>
+            <h1><?php echo html($page->title()) ?></h1>
+            <?php echo wordcount($page->text()) ?>
+            <?php echo kirbytext($page->text()) ?>
+        </article>
+
+    </section>
+
+    <?php snippet('footer') ?>
+
+## Note
+
+It is possible and even likely that the numbers returned are not always a 100% accurate.
+
+Example, Word Count. Other applications that offer Word Count do not seem to agree on what defines a word. Same for this script, ie '404' is not considered to be a word (yet).
+
+
+## Author
+
+Author: nirusu <http://nirusu.me>
